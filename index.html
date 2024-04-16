@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon_io/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me form</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center bg-slate-50 h-screen flex-col">
+      <div class="form-div bg-slate-200 rounded-xl shadow-inner px-8 py-6 w-96">
+        <!-- form begins here -->
+        <form action="#" method="get">
+          <div class="p-2">
+            <label for="name" class="">Name:</label> <br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="outline-none border-2 border-slate-700 bg-slate-50 p-1 w-full"
+            />
+          </div>
+          <div class="p-2">
+            <label for="email" class="">Email:</label> <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="outline-none border-2 border-slate-700 bg-slate-50 p-1 w-full"
+            />
+          </div>
+          <div class="p-2">
+            <label for="contact" class="">Contact number:</label> <br />
+            <input
+              type="text"
+              id="contact"
+              placeholder="Enter your contact number"
+              class="outline-none border-2 border-slate-700 bg-slate-50 p-1 w-full"
+            />
+          </div>
+          <div class="p-2">
+            <label for="subject" class="">Subject:</label> <br />
+            <input
+              type="text"
+              id="subject"
+              placeholder="Enter your subject"
+              class="outline-none border-2 border-slate-700 bg-slate-50 p-1 w-full"
+            />
+          </div>
+          <div class="p-2">
+            <label for="message" class="">Message:</label> <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="15"
+              rows="4"
+              placeholder="Enter your message"
+              class="outline-none border-2 border-slate-700 bg-slate-50 p-1 w-full"
+            ></textarea>
+            <!-- <textarea id="name" placeholder="Enter your name" class="outline-none border-2 border-slate-700 bg-slate-50 text-white p-1 w-full"/> -->
+          </div>
+          <div class="text-center">
+            <input
+              type="button"
+              id="sbmt-btn"
+              class="bg-slate-950 text-white px-3 py-1.5 hover:bg-slate-900 border-none"
+              value="Submit"
+            />
+          </div>
+        </form>
+
+        <!-- form ends here -->
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "hjMPq9dm5Rb2jWbRT",
+        });
+      })();
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
